@@ -10,10 +10,11 @@ public class Base {
 
 
         //do {
-            System.out.println("Quel est le nombre ?");
-            nb = sc.nextLine();
+
             System.out.println("Quel est la base ?");
             base = sc.nextInt();
+        System.out.println("Quel est le nombre ?");
+        nb = sc.next();
 
             //if (nb != "0" && base != 0) {
                 System.out.println(Integer.parseInt(nb, base));
