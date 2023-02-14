@@ -15,22 +15,24 @@ public class Game {
 
     public Player playAndReturnWinner() {
         while (p1.getPoints() < maxPoints && p2.getPoints() < maxPoints) {
-            playNextRound();
+            //playNextRound();
+            if(playNextRound())p1.addPoint();
+            else p2.addPoint();
         }
 
         // remplacer l'instruction suivante par une instruction contenant un opérateur ternaire.
         // La méthode doit retourner le joueur qui a gagné (= celui qui a le plus de points).
-        return null;
+        return (p1.getPoints()> p2.getPoints()?p1:p2);
     }
 
-    private void playNextRound() {
+    private boolean playNextRound() {
         int result1, result2;
         do {
             result1 = rollDice();
             result2 = rollDice();
         } while (result1 == result2);
         // insérer ici l'instruction contenant l'opérateur ternaire
-
+        return (result1>result2)?true:false;
         //
     }
 
