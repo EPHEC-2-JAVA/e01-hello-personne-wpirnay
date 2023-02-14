@@ -5,6 +5,7 @@ import java.util.Random;
 public class Programme {
     public static void main(String[] args) {
         Random rnd = new Random();
+        Aletoire b = new Aletoire();
         Car prem = new Car("vw", "passat", 1234, 12500.00);
         Car sec = new Car("Toyota", "Corolla", 5698, 270000);
         Car trois = new Car("Peugeot", "kiroule", 666, 2000);
@@ -21,6 +22,7 @@ public class Programme {
             } else {
                 vente = new Sale(trois);
             }
+            if(b.nbAle()==0) vente.computeRealPrice(0.10);
             v[i] = vente;
         }
         Eugene.setTabl(v);
