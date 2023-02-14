@@ -21,10 +21,12 @@ public class Programme {
             } else {
                 vente = new Sale(trois);
             }
-            v[i]=vente;
+            v[i] = vente;
         }
         Eugene.setTabl(v);
-       //En cours
+        for (Sale s : Eugene.getVente()) {
+            System.out.println(s.Afficher());
         }
     }
+}
 

@@ -8,4 +8,7 @@ public class Vendor extends Person {
     public void setTabl(Sale[] v)
     {vente = v;}
 
+    public Sale[] getVente() {
+        return vente;
+    }
 }
