@@ -43,7 +43,7 @@ public class Temperature {
         }
     }
     public void afficher(TemperatureUnit u){
-        System.out.println("Valeur encodée: " + getValue(u) + " " + u.toString() + "\nValeur en °F:" + getTempInverse(u) + " " + getValInverse(u).toString());
+        System.out.println("Valeur encodée: " + getValue(u) + " " + u.toString() + "\nValeur en "+getValInverse(u).toString()+ " : " + getTempInverse(u) + " " + getValInverse(u).toString());
     }
 
 }
