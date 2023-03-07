@@ -2,7 +2,7 @@ package be.ephec.java.exercice.e05;
 
 public class Person {
 
-    public Person(String lastName, String firstName, int yearOfBirth) {
+    public Person(String lastName, String firstName) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.yearOfBirth = yearOfBirth;
