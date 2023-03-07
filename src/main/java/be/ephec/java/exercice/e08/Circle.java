@@ -1,4 +1,4 @@
-package e08;
+package be.ephec.java.exercice.e08;
 
 public class Circle extends Shape{
     public Circle(int x, int y) {

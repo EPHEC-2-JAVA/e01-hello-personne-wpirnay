@@ -1,4 +1,4 @@
-package e08;
+package be.ephec.java.exercice.e08;
 
 public class Square extends Shape{
     public Square(int x, int y) {

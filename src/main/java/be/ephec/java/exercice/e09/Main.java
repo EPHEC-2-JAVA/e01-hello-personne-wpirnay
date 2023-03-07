@@ -1,4 +1,4 @@
-package e09;
+package be.ephec.java.exercice.e09;
 
 import java.util.Random;
 

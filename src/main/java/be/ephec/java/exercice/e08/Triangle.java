@@ -1,4 +1,4 @@
-package e08;
+package be.ephec.java.exercice.e08;
 
 public class Triangle extends Shape{
     public Triangle(int x, int y) {
