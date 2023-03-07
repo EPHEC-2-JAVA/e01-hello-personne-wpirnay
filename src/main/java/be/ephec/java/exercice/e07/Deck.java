@@ -1,8 +1,6 @@
 package be.ephec.java.exercice.e07;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Deck {
     private enum choixCouleur{pique, coeur, carreau, trèfle}
@@ -23,6 +21,7 @@ public class Deck {
     }
    // public Card getCarteDuPaquet(int i){}
     public void shuffle() {
+       // Collections.shuffle(paquet);
         Card temp1=null;
         Card temp2=null;
         for (int i = 0; i < paquet.size(); i++) {
@@ -32,6 +31,7 @@ public class Deck {
             temp2=paquet.get(j);
             paquet.set(i,temp2);
             paquet.set(j,temp1);
+        //return paquet;
         }
     }
 }
