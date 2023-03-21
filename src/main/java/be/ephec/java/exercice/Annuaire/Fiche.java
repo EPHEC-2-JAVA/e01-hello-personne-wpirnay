@@ -11,6 +11,6 @@ public class Fiche {
     }
     @Override
     public String toString() {
-        return  nom;
+        return  nom+" "+numTel+" "+adresse;
     }
 }
